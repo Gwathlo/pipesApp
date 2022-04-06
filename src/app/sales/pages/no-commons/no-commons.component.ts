@@ -3,14 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-no-commons',
   templateUrl: './no-commons.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class NoCommonsComponent implements OnInit {
+export class NoCommonsComponent {
+  name: string = 'Alex';
+  gender: string = 'male';
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  invitation = {
+    male: 'Benvingut',
+    femenine: 'Benvinguda',
+  };
 }
