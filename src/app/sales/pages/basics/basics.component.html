@@ -42,6 +42,13 @@
                 <li>today | date: 'dd/MM/yyyy HH:mm:ss'</li>
                 <li>today | date: 'MMMM dd, yyyy'</li>
             </ul>
+
+            <hr>
+            <ul>
+                <li>today | date: 'long' : 'GMT-0'</li>
+                <li>today | date: 'long' : 'GMT-0' : 'en'</li>
+                <li>today | date: 'long' : 'GMT-0' : 'fr'</li>
+            </ul>
         </p-card>
     </div>
 
@@ -54,6 +61,12 @@
                 <li> {{ today | date: 'long' }} </li>
                 <li> {{ today | date: 'dd/MM/yyyy HH:mm:ss' }} </li>
                 <li> {{ today | date: 'MMMM dd, yyyy' }} </li>
+            </ul>
+            <hr>
+            <ul>
+                <li> {{ today | date: 'long' : 'GMT-0' }} </li>
+                <li> {{ today | date: 'long' : 'GMT-0' : 'en' }} </li>
+                <li> {{ today | date: 'long' : 'GMT-0' : 'fr' }} </li>
             </ul>
         </p-card>
     </div>
