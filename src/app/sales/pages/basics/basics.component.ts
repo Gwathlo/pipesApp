@@ -9,4 +9,6 @@ export class BasicsComponent {
   nameLower: string = 'alex';
   nameUpper: string = 'ALEX';
   fullName: string = 'aLeX A g';
+
+  today: Date = new Date();
 }
