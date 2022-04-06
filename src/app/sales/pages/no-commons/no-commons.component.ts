@@ -13,4 +13,11 @@ export class NoCommonsComponent {
     male: 'Benvingut',
     femenine: 'Benvinguda',
   };
+
+  clients: string[] = ['Mary', 'Peter'];
+  clientsMap = {
+    '=0': " don't have any clients waiting",
+    '=1': 'have a client waiting',
+    other: 'have several clients waiting',
+  };
 }
