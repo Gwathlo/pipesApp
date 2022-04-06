@@ -14,10 +14,27 @@ export class NoCommonsComponent {
     femenine: 'Benvinguda',
   };
 
-  clients: string[] = ['Mary', 'Peter'];
+  clients: string[] = ['Mary', 'Peter', 'Alex', 'Fernando', 'Miguel'];
   clientsMap = {
     '=0': " don't have any clients waiting",
     '=1': 'have a client waiting',
+    '=2': 'have two clients waiting',
     other: 'have several clients waiting',
   };
+
+  changeGender() {
+    if (this.name == 'Alex') {
+      this.name = 'Noemí';
+      this.gender = 'femenine';
+    } else {
+      this.name = 'Alex';
+      this.gender = 'male';
+    }
+  }
+
+  eraseClient() {
+    if (this.clients.length > 0) {
+      this.clients.pop();
+    }
+  }
 }
