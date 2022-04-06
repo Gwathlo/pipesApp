@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRouterModule } from './app-router.module';
 
@@ -7,10 +7,14 @@ import { SharedModule } from './shared/shared.module';
 
 import { AppComponent } from './app.component';
 
+import localeCa from '@angular/common/locales/ca-ES-VALENCIA';
+import { registerLocaleData } from '@angular/common';
+registerLocaleData(localeCa);
+
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, SharedModule, AppRouterModule, SalesModule],
-  providers: [],
+  providers: [{ provide: LOCALE_ID, useValue: 'ca-ES-VALENCIA' }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
