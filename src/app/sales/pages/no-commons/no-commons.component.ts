@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-no-commons',
@@ -42,6 +43,14 @@ export class NoCommonsComponent {
       fly: false,
     },
   ];
+
+  myObservable = interval(1000);
+
+  promiseValue = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(' Promise End ');
+    }, 3500);
+  });
 
   changeGender() {
     if (this.name == 'Alex') {
