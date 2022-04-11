@@ -22,6 +22,12 @@ export class NoCommonsComponent {
     other: 'have several clients waiting',
   };
 
+  person = {
+    name: 'Alex',
+    age: 46,
+    adress: 'Bcn, Cat',
+  };
+
   changeGender() {
     if (this.name == 'Alex') {
       this.name = 'Noemí';
