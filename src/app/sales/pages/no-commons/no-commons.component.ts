@@ -28,6 +28,21 @@ export class NoCommonsComponent {
     adress: 'Bcn, Cat',
   };
 
+  heroes = [
+    {
+      name: 'Superman',
+      fly: true,
+    },
+    {
+      name: 'Robin',
+      fly: false,
+    },
+    {
+      name: 'Aquaman',
+      fly: false,
+    },
+  ];
+
   changeGender() {
     if (this.name == 'Alex') {
       this.name = 'Noemí';
