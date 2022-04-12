@@ -14,17 +14,17 @@
 
         <button pButton pRipple label="Change case" icon="pi pi-check" iconPos="left" class="mr-1 p-button-warning" (click)="changeCase()"></button>
 
-        <button pButton pRipple icon="pi pi-sort" label="By name" class="mr-1"></button>
+        <button pButton pRipple icon="pi pi-sort" label="By name" class="mr-1" (click)="changeOrderby('name')"></button>
 
-        <button pButton pRipple icon="pi pi-sort" label="By value" class="mr-1 p-button-success"></button>
+        <button pButton pRipple icon="pi pi-sort" label="By fly" class="mr-1 p-button-success" (click)="changeOrderby('fly')"></button>
 
-        <button pButton pRipple icon="pi pi-sort" label="By color" class="mr-1 p-button-help"></button>
+        <button pButton pRipple icon="pi pi-sort" label="By color" class="mr-1 p-button-help" (click)="changeOrderby('color')"></button>
     </div>
 </p-toolbar>
 
 <div class="grid">
     <div class="col mt-2">
-        <p-table [value]="heroes" responsiveLayout="scroll">
+        <p-table [value]="heroes | sort : orderBy" responsiveLayout="scroll">
             <ng-template pTemplate="header">
                 <tr>
                     <th>Name</th>

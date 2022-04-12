@@ -9,6 +9,8 @@ import { Heroe, Color } from '../../interfaces/sales.interfaces';
 export class SortComponent {
   upperBoolean: boolean = true;
 
+  orderBy: string = '';
+
   heroes: Heroe[] = [
     {
       name: 'Superman',
@@ -39,5 +41,9 @@ export class SortComponent {
 
   changeCase() {
     this.upperBoolean = !this.upperBoolean;
+  }
+
+  changeOrderby(orderBy: string) {
+    this.orderBy = orderBy;
   }
 }
