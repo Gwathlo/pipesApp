@@ -1,16 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sort',
   templateUrl: './sort.component.html',
-  styles: [
-  ]
+  styles: [],
 })
-export class SortComponent implements OnInit {
+export class SortComponent {
+  upperBoolean: boolean = true;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  changeCase() {
+    this.upperBoolean = !this.upperBoolean;
   }
-
 }

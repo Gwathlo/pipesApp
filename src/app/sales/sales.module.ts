@@ -7,6 +7,7 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { SortComponent } from './pages/sort/sort.component';
+import { UppercasePipe } from './pipes/uppercase.pipe';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { SortComponent } from './pages/sort/sort.component';
     NoCommonsComponent,
     BasicsComponent,
     SortComponent,
+    UppercasePipe,
   ],
   imports: [CommonModule, PrimeNgModule],
   exports: [
